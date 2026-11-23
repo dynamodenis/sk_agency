@@ -15,6 +15,7 @@ export const Route = createRootRoute({
       { title: "S.K. Wairimu | Insurance & Financial Solutions" },
     ],
     links: [
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
