@@ -558,7 +558,7 @@ textarea {
   margin: 0;
 }
 .footer {
-  background: #261c1d;
+  background: var(--wine2);
   color: #f4ece5;
   padding: 60px 0 25px;
 }
