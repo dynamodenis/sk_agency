@@ -10,11 +10,12 @@
   // Photos live in R2 and are served by the /images/* route (src/routes/images/$.ts).
   "r2_buckets": [{ "binding": "IMAGES", "bucket_name": "sk-wairimu-images" }],
 
-  // Contact form email settings. The Resend API key is a secret:
-  //   wrangler secret put RESEND_API_KEY
+  // Contact form email settings. The Resend API key is a secret named
+  // RESEND_API_KEY, added in the Cloudflare dashboard (Worker → Settings →
+  // Variables and Secrets). Deploys keep it. Until it is set, the contact form
+  // cannot send email.
   "vars": {
     "CONTACT_TO_EMAIL": "hi@shantelgathiiagency.co.ke",
     "CONTACT_FROM_EMAIL": "S.K. Wairimu Website <website@shantelgathiiagency.co.ke>"
-  },
-  "secrets": { "required": ["RESEND_API_KEY"] }
+  }
 }
