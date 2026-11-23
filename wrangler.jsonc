@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sk-wairimu",
+  "compatibility_date": "2026-11-19",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": { "enabled": true },
+  "upload_source_maps": true,
+
+  // Photos live in R2 and are served by the /images/* route (src/routes/images/$.ts).
+  "r2_buckets": [{ "binding": "IMAGES", "bucket_name": "sk-wairimu-images" }],
+
+  // Contact form email settings. The Resend API key is a secret:
+  //   wrangler secret put RESEND_API_KEY
+  "vars": {
+    "CONTACT_TO_EMAIL": "hi@shantelgathiiagency.co.ke",
+    "CONTACT_FROM_EMAIL": "S.K. Wairimu Website <website@shantelgathiiagency.co.ke>"
+  },
+  "secrets": { "required": ["RESEND_API_KEY"] }
+}
