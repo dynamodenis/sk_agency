@@ -42,7 +42,17 @@ const services = [
   {
     icon: "▤",
     title: "Corporate Solutions",
-    text: "Group life, employee medical, staff benefits and business risk protection.",
+    text: "Comprehensive employee benefits, including Group Life, Group Medical, Staff Pension Schemes, NSSF Tier II arrangements and business risk protection.",
+  },
+  {
+    icon: "⚓",
+    title: "Marine & Transit Insurance",
+    text: "Cargo, goods in transit and marine hull protection.",
+  },
+  {
+    icon: "⌛",
+    title: "Retirement & Pension Planning",
+    text: "Helping individuals and organisations prepare for retirement through pension arrangements, retirement savings strategies, NSSF Tier II solutions and long-term financial planning.",
   },
   {
     icon: "◷",
@@ -74,7 +84,7 @@ const steps = [
   },
   {
     title: "Explore",
-    text: "I explain suitable options, costs and important details in clear, straightforward language.",
+    text: "I present suitable solutions, outlining their benefits, costs and key considerations to support informed decisions.",
   },
   {
     title: "Support",

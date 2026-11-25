@@ -15,6 +15,8 @@ export const serviceOptions = [
   "Motor insurance",
   "Education savings",
   "Corporate solutions",
+  "Marine & transit insurance",
+  "Retirement & pension planning",
   "Financial planning",
   "Financial education",
   "Other / not sure yet",
